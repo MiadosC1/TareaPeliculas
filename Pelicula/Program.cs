@@ -7,6 +7,10 @@ namespace Pelicula
     public class Pelicula
     {
         //Campos
+        private string Titulo;
+        private int año;
+        private string pais;
+        private string director;
         private List<Actor> actores = new List<Actor>();
 
         //Constructores
@@ -25,7 +29,8 @@ namespace Pelicula
     public class Actor
     {
         //Propiedades
-
+        private string Nombre;
+        private int Año;
         //Constructores
 
 
