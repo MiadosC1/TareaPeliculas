@@ -12,11 +12,9 @@ namespace Pelicula
         public string Pais;
         public string Director;
         public List<Actor> actores = new List<Actor>();
-
         public Pelicula()
         {
         }
-
         //Constructores
         public Pelicula (string titulo, int año, string pais, string director)
     {
@@ -25,16 +23,12 @@ namespace Pelicula
         Pais = pais;
         Director = director;
     }
-        //Métodos
-     
+        //Métodos   
         public void Imprime()
         {
             Console.WriteLine($"{Titulo} ({Año} {Pais} {Director})");
         }
-
-
     }
-
     public class Actor
     {
         //Propiedades
@@ -63,13 +57,13 @@ namespace Pelicula
         {
             List<Pelicula> peliculas = new List<Pelicula>();
             Pelicula p1 = new Pelicula();
-            p1.Titulo = "El padrino";
-            p1.Año = 1972;
-            p1.Pais = "EEUU";
-            p1.Director = "Francis Ford Coppola";
-            p1.actores.Add(new Actor("Marlon Brando", 1924));
-            p1.actores.Add(new Actor("Al Pacino", 1940));
-            p1.actores.Add(new Actor("James Caan", 1940));
+            p1.Titulo = "Parásitos";
+            p1.Año = 2019;
+            p1.Pais = "Corea del Sur";
+            p1.Director = "Bong Joon-ho";
+            p1.actores.Add(new Actor("Song Kang-ho", 1967));
+            p1.actores.Add(new Actor("Choi Woo-sik", 1990));
+            p1.actores.Add(new Actor("Lee Sun-kyun", 1975));
             peliculas.Add(p1);
 
             Pelicula p2 = new Pelicula();
@@ -83,13 +77,13 @@ namespace Pelicula
             peliculas.Add(p2);
 
             Pelicula p3 = new Pelicula();
-            p3.Titulo = "El padrino 3";
-            p3.Año = 1990;
+            p3.Titulo = "No es país para viejos	";
+            p3.Año = 2007;
             p3.Pais = "EEUU";
-            p3.Director = "Francis Ford Coppola";
-            p3.actores.Add(new Actor("Al Pacino", 1940));
-            p3.actores.Add(new Actor("Andy García", 1956));
-            p3.actores.Add(new Actor("Mariel Hemingway", 1961));
+            p3.Director = "Ethan Coen, Joel Coen";
+            p3.actores.Add(new Actor("Tommy Lee Jones", 1946));
+            p3.actores.Add(new Actor("Javier Bardem", 1969));
+            p3.actores.Add(new Actor("Josh Brolin", 1968));
             peliculas.Add(p3);
 
             foreach (Pelicula p in peliculas)
